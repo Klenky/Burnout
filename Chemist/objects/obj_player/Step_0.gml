@@ -23,6 +23,7 @@ if (dir == -1) {
 else {
 	image_xscale = 1;
 }
+*/
 
 if playerOnFire = true
 {
@@ -33,33 +34,65 @@ if playerOnFire = true
 		soundTrig = true;
 	}
 }
-*/
+
 var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 var onTheGround = place_meeting(x, y+1, obj_wall);
-var jump = keyboard_check(vk_space);
+var jump = keyboard_check_pressed(vk_space);
+var onTheOil = place_meeting(x, y+1, ObjOilSlick);
+
 
 if (xDirection !=0) image_xscale = xDirection
 
-runSpeed = xDirection * spd;
+xspeed = xDirection * spd;
 yspeed++;
 
+// allows player to jump if in contact with ground object
 if(onTheGround)
 {
+	inTheAir = false;
+	lastTouchOil = false;
 	if (jump)
 	{
 		yspeed = -15;
+		inTheAir = true;
 	}
 }
 
-if (place_meeting( x + runSpeed, y, obj_wall))
+if (inTheAir == true && lastTouchOil == true)
 {
-	while (!place_meeting(x+sign(runSpeed), y, obj_wall)) {
-		x+=sign(runSpeed);
-	}
-	runSpeed = 0
+	xspeed += xspeed;
+	x += xspeed;
 }
 
-x += runSpeed;
+
+if (place_meeting( x + xspeed, y, obj_wall))
+{
+	while (!place_meeting(x+sign(xspeed), y, obj_wall)) {
+		x+=sign(xspeed);
+	}
+	xspeed = 0
+}
+
+if (place_meeting( x + xspeed, y, obj_wallBreakable))
+{
+	while (!place_meeting(x+sign(xspeed), y, obj_wallBreakable)) {
+		x+=sign(xspeed);
+	}
+	xspeed = 0
+}
+
+x += xspeed;
+
+if (onTheOil) {
+	
+	xspeed += xspeed;
+	x += xspeed;
+	lastTouchOil = true;
+	
+	
+}
+
+
 
 if (place_meeting( x, y + yspeed, obj_wall))
 {
