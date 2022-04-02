@@ -15,7 +15,7 @@ if playerOnFire = true
 
 // takes keyboard input for left and right movement
 var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("A")); 
-var onTheGround = place_meeting(x, y+1, obj_wall);			// check for ground variable / returns 1 or 0
+var onTheGround = place_meeting(x, y+1, obj_floor);			// check for ground variable / returns 1 or 0
 var jump = keyboard_check_pressed(vk_space);				// jump button check
 var onTheOil = place_meeting(x, y+1, ObjOilSlick);			// check for oil under the player
 var onConveyorR = place_meeting(x, y + 1, ObjConveyorR);	// checks for Right running conveyor under player
@@ -156,9 +156,9 @@ if (onConveyorL)
 
 
 // checks for collision of walls that are horizontal (floor), makes the player stop falling
-if (place_meeting( x, y + yspeed, obj_wall))
+if (place_meeting( x, y + yspeed, obj_floor))
 {
-	while (!place_meeting(x, y+sign(yspeed), obj_wall)) {
+	while (!place_meeting(x, y+sign(yspeed), obj_floor)) {
 		y+=sign(yspeed);
 	}
 	

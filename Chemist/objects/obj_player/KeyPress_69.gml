@@ -5,13 +5,13 @@ if global.hasTnt = true
 {
 	if image_xscale = 1
 	{
-		instance_create_layer(x + 100, y, "Instances", ObjTNT)
-		ObjTNT.speed = 5;
+		instance_create_layer(x + 20, y, "Instances", ObjTNT)
+		ObjTNT.speed = 6;
 	}
 	else
 	{
-		instance_create_layer(x - 100, y, "Instances", ObjTNT)
-		ObjTNT.speed = -5;
+		instance_create_layer(x - 20, y, "Instances", ObjTNT)
+		ObjTNT.speed = -6;
 	}
 	
 	global.hasTnt = false;
@@ -22,13 +22,13 @@ if global.hasTnt2 = true
 {
 	if image_xscale = 1
 	{
-		instance_create_layer(x + 100, y, "Instances", ObjTNT2)
-		ObjTNT2.speed = 5;
+		instance_create_layer(x + 20, y, "Instances", ObjTNT2)
+		ObjTNT2.speed = 6;
 	}
 	else
 	{
-		instance_create_layer(x - 100, y, "Instances", ObjTNT2)
-		ObjTNT2.speed = -5;
+		instance_create_layer(x - 20, y, "Instances", ObjTNT2)
+		ObjTNT2.speed = -6;
 	}
 	
 	global.hasTnt2 = false;
