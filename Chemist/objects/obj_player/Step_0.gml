@@ -26,7 +26,7 @@ if (xDirection !=0) image_xscale = xDirection
 
 xspeed = xDirection * spd;
 image_speed = xDirection * 1;
-yspeed++;
+yspeed +=0.8;
 
 // allows player to jump if in contact with ground object
 if(onTheGround)
