@@ -56,9 +56,9 @@ if (place_meeting( x + xspeed, y, obj_wall))
 }
 
 // checks for collision of the breakable wall, so the player just doesnt go through it
-if (place_meeting( x + xspeed, y, obj_wallBreakable))
+if (place_meeting( x + xspeed, y, obj_wallBreakable1))
 {
-	while (!place_meeting(x+sign(xspeed), y, obj_wallBreakable)) {
+	while (!place_meeting(x+sign(xspeed), y, obj_wallBreakable1)) {
 		x+=sign(xspeed);
 	}
 	xspeed = 0
@@ -94,10 +94,11 @@ y += yspeed;
 
 
 // player death
-if (isDead) {
+if (obj_checkpoints_save.isDead) {
 	audio_play_sound(Aud_Explosion3, 10, false);
-	alarm_set(1, 10);
+	instance_destroy(obj_player_fire);
 	instance_destroy(obj_player);	
+	
 }
 
 

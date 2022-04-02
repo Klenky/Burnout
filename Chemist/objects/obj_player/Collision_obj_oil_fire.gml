@@ -1,3 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-isDead = true;
+obj_checkpoints_save.isDead = true;

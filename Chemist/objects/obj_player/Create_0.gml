@@ -11,4 +11,4 @@ yspeed = 0;				// Used to simulate gravity, makes player fall.
 global.hasTnt = false;
 inTheAir = false;
 lastTouchOil = false;
-isDead = false;
+obj_checkpoints_save.isDead = false;
