@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "doorTest",
-    "path": "sprites/doorTest/doorTest.yy",
+    "name": "broken_wall",
+    "path": "sprites/broken_wall/broken_wall.yy",
   },
   "solid": true,
   "visible": true,

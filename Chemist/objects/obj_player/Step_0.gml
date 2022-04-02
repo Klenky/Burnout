@@ -49,6 +49,26 @@ if (inTheAir == true && lastTouchOil == true)
 	x += xspeed;
 }
 
+// jump speed in the air after jumping from a right moving conveyor belt
+if (inTheAir == true && lastTouchConveyorR == true) {
+	
+		switch(xDirection) {
+			case 1:	xspeed += xspeed * 0.3; break;
+			case -1: xspeed -= xspeed - 4; break;
+			case 0: xspeed -= xspeed - 4; break;
+		}
+		x += xspeed;
+}
+// same as above but for the left movement conveyor
+if (inTheAir == true && lastTouchConveyorL == true) {
+		switch(xDirection) {
+			case 1: xspeed -= xspeed + 4; break;	
+			case -1: xspeed += xspeed *0.3; break;
+			case 0: xspeed += xspeed *0.3; break;					
+		}	
+		x += xspeed;
+}
+
 // checks for collision of walls that are verticle, makes the player stop in place
 if (place_meeting( x + xspeed, y, obj_wall))
 {

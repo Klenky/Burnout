@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SprFloorTest",
-    "path": "sprites/SprFloorTest/SprFloorTest.yy",
+    "name": "wall_hit_box",
+    "path": "sprites/wall_hit_box/wall_hit_box.yy",
   },
   "solid": true,
   "visible": true,
