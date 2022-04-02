@@ -12,5 +12,7 @@ global.hasTnt = false;
 global.hasTnt2 = false;
 inTheAir = false;
 lastTouchOil = false;
+lastTouchConveyorR = false;
+lastTouchConveyorL = false;
 obj_checkpoints_save.isDead = false;
 image_speed = 0;

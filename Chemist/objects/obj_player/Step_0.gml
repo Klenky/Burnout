@@ -34,6 +34,8 @@ if(onTheGround)
 	
 	inTheAir = false;		// if on ground, not in the air
 	lastTouchOil = false;	// if the player touches the ground, then last ground touched wasnt oil
+	lastTouchConveyorR = false;
+	lastTouchConveyorL = false;
 	if (jump)
 	{
 		yspeed = -15;		// this sets max height for jump, change for height adjustment
@@ -47,6 +49,26 @@ if (inTheAir == true && lastTouchOil == true)
 {
 	xspeed += xspeed;
 	x += xspeed;
+}
+
+// jump speed in the air after jumping from a right moving conveyor belt
+if (inTheAir == true && lastTouchConveyorR == true) {
+	
+		switch(xDirection) {
+			case 1:	xspeed += xspeed * 0.3; break;
+			case -1: xspeed -= xspeed - 4; break;
+			case 0: xspeed -= xspeed - 4; break;
+		}
+		x += xspeed;
+}
+// same as above but for the left movement conveyor
+if (inTheAir == true && lastTouchConveyorL == true) {
+		switch(xDirection) {
+			case 1: xspeed -= xspeed + 4; break;	
+			case -1: xspeed += xspeed *0.3; break;
+			case 0: xspeed += xspeed *0.3; break;					
+		}	
+		x += xspeed;
 }
 
 // checks for collision of walls that are verticle, makes the player stop in place
@@ -78,59 +100,27 @@ if (onTheOil) {
 	lastTouchOil = true; // set to true to help check for when the player should have speed jump
 }
 
+
 if (onConveyorR) 
 {
-	if xDirection = 1
-	{
-	xspeed += xspeed * 0.3;
-	if (jump)
-	{
-		yspeed = -15;		// this sets max height for jump, change for height adjustment
-		
-	}
-	
-	
-	}
-	
-	if xDirection = 0
-	{
-		xspeed -= xspeed - 4;
-	}
-	if xDirection = -1
-	{
-		xspeed -= xspeed - 4;
+	switch(xDirection) {
+		case 1:	xspeed += xspeed * 0.3; break;
+		case -1: xspeed -= xspeed - 4; break;
+		case 0: xspeed -= xspeed - 4; break;
 	}
 	x += xspeed;
+	lastTouchConveyorR = true;
 }
 
 if (onConveyorL) 
 {
-	if xDirection = 1
-	{
-	xspeed -= xspeed + 4;
-	
-	 
-	}
-	
-	if xDirection = 0
-	{
-		xspeed -= xspeed + 4;
-	}
-	if xDirection = -1
-	{
-		
-		xspeed += xspeed *0.3;
-		if (jump)
-	{
-		yspeed = -15;		// this sets max height for jump, change for height adjustment
-		
-	}
-	else
-	{
-		speed = 0;
-	}
+	switch(xDirection) {
+		case 1: xspeed -= xspeed + 4; break;	
+		case -1: xspeed += xspeed *0.3; break;
+		case 0: xspeed += xspeed *0.3; break;					
 	}
 	x += xspeed;
+	lastTouchConveyorL = true;
 }
 
 
