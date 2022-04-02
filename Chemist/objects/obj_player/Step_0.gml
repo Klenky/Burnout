@@ -166,4 +166,9 @@ if place_meeting(x,y,ObjFlag)
 	global.checkpoint1 = true;
 }
 
+if place_meeting(x,y,ObjBarrelTrig)
+{
+	global.barrelFallTrig = true;
+}
+
 
