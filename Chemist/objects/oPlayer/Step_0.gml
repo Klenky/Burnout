@@ -1,10 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
+health = 1;
+
+
+timer += 1;
+
 
 var xDirection =  keyboard_check(ord("D")) -  keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var onTheGround = place_meeting(x,y +1, oWall);
-var onTheOil = place_meeting(x, y+1, oil_slick);
+var onTheOil = place_meeting(x, y+15, oil_slick);
+
+//var overTheOil = place_meeting(x, y+15, oil_slick);
 
 
 if (xDirection !=0) image_xscale = xDirection;
@@ -14,6 +21,8 @@ ySpeed++;
 
 if (onTheGround) {
 	if (jump) {
+		xSpeed += xSpeed;
+		x+=xSpeed;
 		ySpeed = -15;
 	}
 }
@@ -35,11 +44,11 @@ if (onTheOil) {
 	xSpeed += xSpeed;
 	x+=xSpeed;
 	
-	if (jump) {
-		x+=xSpeed;
-		y+=ySpeed;
-		ySpeed = -15;
-	}
+	//if (jump & overTheOil) {
+		//x+=xSpeed;
+		//y+=ySpeed;
+		//ySpeed = -15;
+	//}
 }
 
 if (place_meeting(x, y + ySpeed, oWall)) {
