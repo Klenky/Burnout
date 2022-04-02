@@ -53,21 +53,24 @@ if (inTheAir == true && lastTouchOil == true)
 
 // jump speed in the air after jumping from a right moving conveyor belt
 if (inTheAir == true && lastTouchConveyorR == true) {
-	
-		switch(xDirection) {
-			case 1:	xspeed += xspeed * 0.3; break;
-			case -1: xspeed -= xspeed - 4; break;
-			case 0: xspeed -= xspeed - 4; break;
-		}
+		if(xDirection == 1) 
+			xspeed += xspeed * 0.3;
+		if (xDirection == 0)
+			xspeed -= xspeed - 4
+		if (xDirection == -1)
+			xspeed -= xspeed - 4;
+			
 		x += xspeed;
 }
 // same as above but for the left movement conveyor
 if (inTheAir == true && lastTouchConveyorL == true) {
-		switch(xDirection) {
-			case 1: xspeed -= xspeed + 4; break;	
-			case -1: xspeed += xspeed *0.3; break;
-			case 0: xspeed += xspeed *0.3; break;					
-		}	
+		if(xDirection == 1)
+			xspeed -= xspeed + 4;
+		if(xDirection == 0)
+			xspeed += xspeed *0.3; 
+		if(xDirection == -1)
+			xspeed += xspeed *0.3;
+				
 		x += xspeed;
 }
 
