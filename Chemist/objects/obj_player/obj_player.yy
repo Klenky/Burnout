@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "character_model",
-    "path": "sprites/character_model/character_model.yy",
+    "name": "SprChar",
+    "path": "sprites/SprChar/SprChar.yy",
   },
   "solid": true,
   "visible": true,
@@ -35,6 +35,8 @@
     {"isDnD":false,"eventNum":69,"eventType":9,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_oil_fire","path":"objects/obj_oil_fire/obj_oil_fire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_pit_death","path":"objects/obj_pit_death/obj_pit_death.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"ObjTNT2","path":"objects/ObjTNT2/ObjTNT2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

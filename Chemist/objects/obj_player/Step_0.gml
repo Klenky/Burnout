@@ -15,14 +15,17 @@ if playerOnFire = true
 
 // takes keyboard input for left and right movement
 var xDirection = keyboard_check(ord("D")) - keyboard_check(ord("A")); 
-var onTheGround = place_meeting(x, y+1, obj_wall);	// check for ground variable / returns 1 or 0
-var jump = keyboard_check_pressed(vk_space);		// jump button check
-var onTheOil = place_meeting(x, y+1, ObjOilSlick);	// check for oil under the player
+var onTheGround = place_meeting(x, y+1, obj_wall);			// check for ground variable / returns 1 or 0
+var jump = keyboard_check_pressed(vk_space);				// jump button check
+var onTheOil = place_meeting(x, y+1, ObjOilSlick);			// check for oil under the player
+var onConveyorR = place_meeting(x, y + 1, ObjConveyorR);	// checks for Right running conveyor under player
+var onConveyorL = place_meeting(x, y + 1, ObjConveyorL);	// checks for Left running conveyor under player 
 
 
 if (xDirection !=0) image_xscale = xDirection
 
 xspeed = xDirection * spd;
+image_speed = xDirection * 1;
 yspeed++;
 
 // allows player to jump if in contact with ground object
@@ -75,6 +78,47 @@ if (onTheOil) {
 	lastTouchOil = true; // set to true to help check for when the player should have speed jump
 }
 
+if (onConveyorR) 
+{
+	if xDirection = 1
+	{
+	xspeed += xspeed * 0.5;
+	if (jump)
+	{
+		yspeed = -15;		// this sets max height for jump, change for height adjustment
+		
+	}
+	
+	
+	}
+	if xDirection = -1
+	{
+		xspeed -= xspeed - 4;
+	}
+	x += xspeed;
+}
+
+if (onConveyorL) 
+{
+	if xDirection = 1
+	{
+	xspeed -= xspeed + 4;
+	
+	 
+	}
+	if xDirection = -1
+	{
+		xspeed += xspeed *0.5;
+		if (jump)
+	{
+		yspeed = -15;		// this sets max height for jump, change for height adjustment
+		
+	}
+	}
+	x += xspeed;
+}
+
+
 
 // checks for collision of walls that are horizontal (floor), makes the player stop falling
 if (place_meeting( x, y + yspeed, obj_wall))
@@ -101,5 +145,10 @@ if (obj_checkpoints_save.isDead) {
 	
 }
 
+if place_meeting(x,y,ObjFlag)
+{
+	ObjFlag.image_index = 1;
+	global.checkpoint1 = true;
+}
 
 

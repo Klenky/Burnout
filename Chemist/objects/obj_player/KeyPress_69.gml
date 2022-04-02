@@ -18,6 +18,23 @@ if global.hasTnt = true
 	alarm_set(0,120)
 }
 
+if global.hasTnt2 = true
+{
+	if image_xscale = 1
+	{
+		instance_create_layer(x + 100, y, "Instances", ObjTNT2)
+		ObjTNT2.speed = 5;
+	}
+	else
+	{
+		instance_create_layer(x - 100, y, "Instances", ObjTNT2)
+		ObjTNT2.speed = -5;
+	}
+	
+	global.hasTnt2 = false;
+	alarm_set(0,120)
+}
+
 
 //instance_create_layer(1069, 582, "Instances", ObjTNT)
 

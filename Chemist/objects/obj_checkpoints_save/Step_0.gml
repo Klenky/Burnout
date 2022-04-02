@@ -3,7 +3,7 @@
 
 if(isDead) {
 
-	if (!instance_exists(obj_wallBreakable1)) 
+	if (global.checkpoint1 = true) 
 	{
 		currentSpawn = 1;
 		alarm_set(0, 10);
@@ -15,6 +15,8 @@ if(isDead) {
 	}
 	instance_create_layer(xSpawn[currentSpawn], ySpawn[currentSpawn], "Instances", obj_player);
 	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_player_fire);
+	obj_player_fire.depth = -5;
+	instance_destroy(obj_oil_fire);
 }
 
 
