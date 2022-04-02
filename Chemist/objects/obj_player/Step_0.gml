@@ -82,7 +82,7 @@ if (onConveyorR)
 {
 	if xDirection = 1
 	{
-	xspeed += xspeed * 0.5;
+	xspeed += xspeed * 0.3;
 	if (jump)
 	{
 		yspeed = -15;		// this sets max height for jump, change for height adjustment
@@ -90,6 +90,11 @@ if (onConveyorR)
 	}
 	
 	
+	}
+	
+	if xDirection = 0
+	{
+		xspeed -= xspeed - 4;
 	}
 	if xDirection = -1
 	{
@@ -106,13 +111,23 @@ if (onConveyorL)
 	
 	 
 	}
+	
+	if xDirection = 0
+	{
+		xspeed -= xspeed + 4;
+	}
 	if xDirection = -1
 	{
-		xspeed += xspeed *0.5;
+		
+		xspeed += xspeed *0.3;
 		if (jump)
 	{
 		yspeed = -15;		// this sets max height for jump, change for height adjustment
 		
+	}
+	else
+	{
+		speed = 0;
 	}
 	}
 	x += xspeed;
