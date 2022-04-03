@@ -2,15 +2,18 @@
 // You can write your code in this editor
 //global.curTime = oPlayer.timer / room_speed;
 global.hasWon = false;
-	playerStruct = function(_name, _time) constructor {
-		pName = _name;
-		pTime = _time;
-	};
-
-	bestTimes = ds_list_create();
-	var name;
 	
-	bestTimesIndex = ds_list_create();
+	
+
+	//bestTimes = ds_list_create();
+	//var name;
+	
+	//bestTimesIndex = ds_list_create();
+	
+	highScoreIndex = 0;
+	high_score[highScoreIndex][0] = 0;
+	high_score[highScoreIndex][1] = "bob";
+	
 	
 //ds_list_add(bestTimes, new playerStruct (name, global.curTime) );
 //ds_list_add(bestTimes, new playerStruct (name, global.curTime) );
