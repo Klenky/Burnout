@@ -11,3 +11,23 @@ if x >= 783
 	image_speed = 0
 	global.textTrig = true;
 }
+
+if global.lookLeft = true
+	{
+		if alarm[0] == -1
+	{
+		alarm_set(0,90);
+	}
+	}
+	
+	if (fallTrig = true)
+	{
+		y += 10
+	}
+	
+	if y >= 768
+	{
+		room_goto(Room1)
+	}
+	
+	

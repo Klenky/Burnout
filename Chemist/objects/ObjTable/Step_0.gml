@@ -15,5 +15,6 @@ if (global.textTrig = true)
 			{
 				instance_destroy (ObjTextBox);
 				instance_destroy (ObjOpenText);
+				global.mixPot = true;
 			}
 }
