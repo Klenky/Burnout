@@ -16,3 +16,10 @@ inTheAir = false;
 lastTouchOil = false;
 obj_checkpoints_save.isDead = false;
 image_speed = 0;
+
+global.curTime = 0.0;
+
+global.hasWon = false;
+
+room_speed = 60;
+timer = room_speed/2 * 0;

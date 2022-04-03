@@ -195,3 +195,5 @@ if place_meeting(x, y, ObjBarrel2)
 }
 
 
+timer += 1;
+
