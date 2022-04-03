@@ -3,7 +3,7 @@
 //global.curTime = oPlayer.timer / room_speed;
 global.hasWon = false;
 	
-	
+	draw_set_font(comicSansSmaller);
 
 	//bestTimes = ds_list_create();
 	//var name;
