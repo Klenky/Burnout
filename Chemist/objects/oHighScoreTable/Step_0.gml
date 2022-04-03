@@ -1,8 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 // needs to be room1 in main branch
-
-var strLength = 3;
+draw_set_font(arcade);
 
 if (room == highScores) {
 	if (global.hasWon == true) {
@@ -11,7 +10,6 @@ if (room == highScores) {
 		{
 			name = string_copy(name, 1, 3);
 		}
-			
 		//ds_list_sort(bestTimes, false);
 		high_score[highScoreIndex][0] = global.curTime;
 		high_score[highScoreIndex][1] = name;
