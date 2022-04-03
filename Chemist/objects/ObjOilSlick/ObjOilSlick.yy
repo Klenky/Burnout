@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite6",
-    "path": "sprites/Sprite6/Sprite6.yy",
+    "name": "oil_spill",
+    "path": "sprites/oil_spill/oil_spill.yy",
   },
   "solid": false,
   "visible": true,

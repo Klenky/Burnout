@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Explosion",
+    "path": "folders/Sprites/Explosion.yy",
   },
   "resourceVersion": "1.0",
   "name": "explosion_beta_6",

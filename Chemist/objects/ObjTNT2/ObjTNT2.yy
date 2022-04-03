@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "tnt_asset",
+    "path": "sprites/tnt_asset/tnt_asset.yy",
   },
   "solid": false,
   "visible": true,

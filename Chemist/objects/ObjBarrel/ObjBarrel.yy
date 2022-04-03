@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "SprBarrel",
-    "path": "sprites/SprBarrel/SprBarrel.yy",
+    "name": "barrel_role",
+    "path": "sprites/barrel_role/barrel_role.yy",
   },
   "solid": true,
   "visible": true,

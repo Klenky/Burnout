@@ -9,14 +9,18 @@ if(isDead) {
 		alarm_set(0, 10);
 		
 	} 
-	else 
+	if (global.checkpoint2 = true)
 	{
-		currentSpawn = 0
+		global.checkpoint1 = false;
+		currentSpawn = 2;
+		alarm_set(0,10)
 	}
 	instance_create_layer(xSpawn[currentSpawn], ySpawn[currentSpawn], "Instances", obj_player);
 	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_player_fire);
 	obj_player_fire.depth = -5;
 	instance_destroy(obj_oil_fire);
+	global.hasTnt = false;
+	global.hasTnt2 = false;
 }
 
 

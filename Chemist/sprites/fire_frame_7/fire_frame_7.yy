@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Fire_Flame",
+    "path": "folders/Sprites/Fire_Flame.yy",
   },
   "resourceVersion": "1.0",
   "name": "fire_frame_7",

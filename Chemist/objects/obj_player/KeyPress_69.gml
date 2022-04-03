@@ -15,7 +15,12 @@ if global.hasTnt = true
 	}
 	
 	global.hasTnt = false;
-	alarm_set(0,120)
+	
+	if alarm[0] == -1
+	{
+	alarm_set(0, 120);
+	}
+	
 }
 
 if global.hasTnt2 = true
@@ -32,7 +37,10 @@ if global.hasTnt2 = true
 	}
 	
 	global.hasTnt2 = false;
-	alarm_set(0,120)
+	if alarm[0] == -1
+	{
+	alarm_set(0, 120);
+	}
 }
 
 

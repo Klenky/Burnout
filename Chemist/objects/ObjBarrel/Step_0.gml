@@ -10,9 +10,9 @@ if (onConveyorL)
 }
 x += xspeed;
 
-if (place_meeting( x, y + yspeed, obj_wall))
+if (place_meeting( x, y + yspeed, obj_floor))
 {
-	while (!place_meeting(x, y+sign(yspeed), obj_wall)) {
+	while (!place_meeting(x, y+sign(yspeed), obj_floor)) {
 		y+=sign(yspeed);
 	}
 	
