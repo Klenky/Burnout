@@ -2,11 +2,16 @@
 // You can write your code in this editor
 // needs to be room1 in main branch
 
+var strLength = 3;
 
 if (room == highScores) {
-show_debug_message("has won room: " + string(global.hasWon));
 	if (global.hasWon == true) {
-		name = get_string("Please enter your name", " ");
+		name = get_string("Please enter your initials up to three letters!", " ");
+		if (string_length(name) > 3)
+		{
+			name = string_copy(name, 1, 3);
+		}
+			
 		//ds_list_sort(bestTimes, false);
 		high_score[highScoreIndex][0] = global.curTime;
 		high_score[highScoreIndex][1] = name;
