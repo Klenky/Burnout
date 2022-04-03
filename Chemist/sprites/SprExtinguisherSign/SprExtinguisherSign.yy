@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"e9d3ee98-cbd8-4e2a-b1e6-98059810f152","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e9d3ee98-cbd8-4e2a-b1e6-98059810f152","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"LayerId":{"name":"228d5015-8834-4cc0-afd4-cf85d2312368","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"e9d3ee98-cbd8-4e2a-b1e6-98059810f152","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"LayerId":{"name":"8d8bdfb6-a6c4-485b-be42-6ef9d3cd0dce","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"e9d3ee98-cbd8-4e2a-b1e6-98059810f152","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"LayerId":{"name":"228d5015-8834-4cc0-afd4-cf85d2312368","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"SprExtinguisherSign","path":"sprites/SprExtinguisherSign/SprExtinguisherSign.yy",},"resourceVersion":"1.0","name":"e9d3ee98-cbd8-4e2a-b1e6-98059810f152","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

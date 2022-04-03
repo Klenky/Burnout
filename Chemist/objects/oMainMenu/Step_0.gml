@@ -11,7 +11,7 @@ if (down and image_index < 4) {
 }
 
 if image_index == 0 and accept {
-	room_goto(Room1);
+	room_goto(Openening);
 } 
 if image_index == 1 and accept {
 	room_goto(Controls2);

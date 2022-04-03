@@ -23,6 +23,11 @@ if global.lookLeft = true
 	if (fallTrig = true)
 	{
 		y += 10
+		if musicTrig = false
+		{
+			musicTrig = true;
+			audio_play_sound(aud_wilhelmScream,8,false);
+		}
 	}
 	
 	if y >= 768

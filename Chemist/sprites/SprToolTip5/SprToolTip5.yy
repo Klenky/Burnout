@@ -25,10 +25,10 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"13658229-ac74-47b1-85bc-556b82b16c26","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"943b892c-ff0c-4a64-857a-bad008184099","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"f643bc98-4ad5-4ac1-9296-2864e3e158d0","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"ad29b8f1-b384-4ed2-99cd-99740da70f5b","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"f643bc98-4ad5-4ac1-9296-2864e3e158d0","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"943b892c-ff0c-4a64-857a-bad008184099","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","path":"sprites/SprToolTip5/SprToolTip5.yy",},"LayerId":{"name":"13658229-ac74-47b1-85bc-556b82b16c26","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"SprToolTip5","path":"sprites/SprToolTip5/SprToolTip5.yy",},"resourceVersion":"1.0","name":"3a982a9e-17e2-4c0a-9b3b-9e0cb785ef9e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {

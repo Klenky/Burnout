@@ -3,6 +3,7 @@
 if soundTrig = false
 {
 	audio_play_sound(Aud_Explosion1, 8, false);
+	ShakeScreen();
 	soundTrig = true;
 	instance_destroy(ObjTNT);
 	instance_destroy(obj_wallBreakable1);

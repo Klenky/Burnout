@@ -3,4 +3,5 @@
 
 global.textTrig = false;
 fallTrig = false;
+musicTrig = false;
 
