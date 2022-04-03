@@ -3,7 +3,7 @@
     "name": "barrel_role",
     "path": "sprites/barrel_role/barrel_role.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,

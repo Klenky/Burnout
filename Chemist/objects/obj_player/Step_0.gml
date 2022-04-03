@@ -145,6 +145,22 @@ if (place_meeting( x, y + yspeed, obj_floor))
 // updates the falling every update
 y += yspeed;
 
+if (place_meeting(x, y, ObjBarrel) = true)
+{
+	instance_create_layer(x,y, "Instances", ObjExplosion1);
+	if alarm[1] == -1
+	{
+		alarm_set(1, 30);
+	}
+}
+if place_meeting(x, y, ObjBarrel2)
+{
+	instance_create_layer(x,y, "Instances", ObjExplosion1);
+	if alarm[2] == -1
+	{
+		alarm_set(2, 30);
+	}
+}
 
 // player death
 if (obj_checkpoints_save.isDead) {
@@ -177,22 +193,7 @@ if place_meeting(x, y, ObjFlag2)
 	global.checkpoint2 = true;
 }
 
-if place_meeting(x, y, ObjBarrel)
-{
-	instance_create_layer(x,y, "Instances", ObjExplosion1);
-	if alarm[1] == -1
-	{
-		alarm_set(1, 30);
-	}
-}
-if place_meeting(x, y, ObjBarrel2)
-{
-	instance_create_layer(x,y, "Instances", ObjExplosion1);
-	if alarm[1] == -1
-	{
-		alarm_set(1, 30);
-	}
-}
+
 
 
 timer += 1;

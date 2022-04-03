@@ -19,8 +19,11 @@ if(isDead) {
 	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_player_fire);
 	obj_player_fire.depth = -5;
 	instance_destroy(obj_oil_fire);
-	global.hasTnt = false;
-	global.hasTnt2 = false;
+	
+	if !instance_exists(ObjTNT2)
+	{
+		instance_create_layer(1716, 592, "Instances", ObjTNT2)
+	}
 }
 
 
