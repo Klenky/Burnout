@@ -1,0 +1,1 @@
+//global.hasWon = false;

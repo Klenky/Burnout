@@ -6,6 +6,7 @@ health = 1;
 timer += 1;
 
 
+
 var xDirection =  keyboard_check(ord("D")) -  keyboard_check(ord("A"));
 var jump = keyboard_check_pressed(vk_space);
 var onTheGround = place_meeting(x,y +1, oWall);
