@@ -31,5 +31,8 @@ global.hasWon = false;
 		return _a.pTime - _b.pTime;
 	}*/
 
+timer = 0;
+
+audio_play_sound(mainMenu9, 10, true);
 
 

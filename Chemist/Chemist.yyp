@@ -118,6 +118,7 @@
     {"id":{"name":"explosion_between_beta_1","path":"sprites/explosion_between_beta_1/explosion_between_beta_1.yy",},"order":13,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},"order":3,},
+    {"id":{"name":"broken_wall_door","path":"sprites/broken_wall_door/broken_wall_door.yy",},"order":92,},
     {"id":{"name":"Character_frame_2","path":"sprites/Character_frame_2/Character_frame_2.yy",},"order":1,},
     {"id":{"name":"ObjBeakers","path":"objects/ObjBeakers/ObjBeakers.yy",},"order":59,},
     {"id":{"name":"spr_light_directional","path":"sprites/spr_light_directional/spr_light_directional.yy",},"order":3,},
@@ -327,9 +328,9 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"mainMenu","path":"rooms/mainMenu/mainMenu.yy",},},
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_lighting_demo_many","path":"rooms/rm_lighting_demo_many/rm_lighting_demo_many.yy",},},
     {"roomId":{"name":"rm_lighting_demo_single_area","path":"rooms/rm_lighting_demo_single_area/rm_lighting_demo_single_area.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room1_1","path":"rooms/Room1_1/Room1_1.yy",},},
     {"roomId":{"name":"Openening","path":"rooms/Openening/Openening.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},

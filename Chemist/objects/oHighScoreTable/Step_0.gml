@@ -27,5 +27,11 @@ if (room == highScores) {
 	
 }
 
+if (room == Room1) {
+	timer += 1;	
+} else {
+	timer = room_speed/2 * 0;
+	}
+
 
 

@@ -11,7 +11,7 @@ draw_set_font(comicsans);
 
 //if (bestTimes
 
-global.curTime = obj_player.timer / (room_speed/2);
+global.curTime = oHighScoreTable.timer / (room_speed/2);
 
 
 room_goto(highScores);

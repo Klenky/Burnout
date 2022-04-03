@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-instance_create_layer(x,y+40,"Instances",ObjExplosion1);
+audio_stop_sound(mainMenu9);

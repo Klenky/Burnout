@@ -24,3 +24,5 @@ center_v = camera_get_view_height(view_camera[0])/2;
 
 new_hor = 0;
 new_ver = 0;
+
+audio_play_sound(mainMusic, 7, true);

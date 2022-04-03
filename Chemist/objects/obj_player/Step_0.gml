@@ -36,10 +36,17 @@ if(onTheGround)
 	lastTouchOil = false;	// if the player touches the ground, then last ground touched wasnt oil
 	lastTouchConveyorL = false;
 	lastTouchConveyorR = false;
+	musicTrig = false;
 	if (jump)
 	{
 		yspeed = -15;		// this sets max height for jump, change for height adjustment
 		inTheAir = true;	// since the player is in the air, in the air is true
+		if (musicTrig = false)
+		{
+			audio_play_sound(_8_Bit_Jump, 8, false);
+			musicTrig = true;
+			
+		}
 	}
 }
 
@@ -196,5 +203,5 @@ if place_meeting(x, y, ObjFlag2)
 
 
 
-timer += 1;
+
 
